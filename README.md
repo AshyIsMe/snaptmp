@@ -1,7 +1,7 @@
 snaptmp
 =======
 
-snaptmp - test project for snaplet-redis
+snaptmp - test project for the new snaplet-redis Auth backend
 
 ## The Issue
 Currently I can create a new user and it is saved correctly in redis but then I can't seem to login properly.  The loginSuccess action is run but instead of redirecting to the index page it goes straight back to the login page.
