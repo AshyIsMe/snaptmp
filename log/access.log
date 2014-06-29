@@ -1,0 +1,7 @@
+127.0.0.1 - - [29/Jun/2014:22:39:20 +1000] "GET / HTTP/1.1" 200 - - "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36"
+127.0.0.1 - - [29/Jun/2014:22:39:26 +1000] "POST /login HTTP/1.1" 200 - "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36"
+127.0.0.1 - - [29/Jun/2014:22:39:28 +1000] "GET /new_user HTTP/1.1" 200 - "http://localhost:8000/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36"
+127.0.0.1 - - [29/Jun/2014:22:39:32 +1000] "POST /new_user HTTP/1.1" 302 0 "http://localhost:8000/new_user" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36"
+127.0.0.1 - - [29/Jun/2014:22:39:32 +1000] "GET / HTTP/1.1" 200 - "http://localhost:8000/new_user" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36"
+127.0.0.1 - - [29/Jun/2014:22:39:45 +1000] "POST /login HTTP/1.1" 302 0 "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36"
+127.0.0.1 - - [29/Jun/2014:22:39:45 +1000] "GET / HTTP/1.1" 200 - "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36"
