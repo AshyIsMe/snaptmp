@@ -26,6 +26,7 @@ import           Database.Redis (connect, defaultConnectInfo)
 ------------------------------------------------------------------------------
 import           Application
 
+import           Debug.Trace
 
 ------------------------------------------------------------------------------
 -- | Render login form
@@ -41,7 +42,8 @@ handleLogin authError = heistLocal (I.bindSplices errs) $ render "login"
 handleLoginSubmit :: Handler App (AuthManager App) ()
 handleLoginSubmit =
     loginUser "login" "password" Nothing
-              (\_ -> handleLogin err) (redirect "/")
+              (\_ -> traceShow ("handleLoginSubmit error: " ++ show err) $ handleLogin err) 
+              (traceShow ("handleLoginSubmit success. Redirecting to /") $ redirect "/")
   where
     err = Just "Unknown user or password"
 
